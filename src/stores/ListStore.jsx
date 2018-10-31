@@ -1,7 +1,7 @@
 import {EventEmitter} from 'events'
 import objectAssign from 'object-assign'
 
-var ListStore=objectAssign({},EventEmitter.prototype,{ //继承EventEmitter.prototype事件监听
+var ListStore=Object.assign({},EventEmitter.prototype,{ //继承EventEmitter.prototype事件监听
   items: [],
 
   getAll: function() {   //拿到全部数据
